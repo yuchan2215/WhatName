@@ -9,6 +9,7 @@ public final class Whatname extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         Bukkit.getPluginCommand("whatname").setExecutor(new WhatNameExecutor());
+        Bukkit.getServer().getPluginManager().registerEvents(new JoinEvent(),this);
     }
 
     @Override
