@@ -1,0 +1,8 @@
+name: WhatName
+version: '${version}'
+main: xyz.miyayu.whatname.Whatname
+api-version: 1.18
+prefix: WName
+authors: [ Miyayu ]
+description: WhatIsMyName?
+website: https://twitter.com/yuu1111main
