@@ -1,8 +1,17 @@
 name: WhatName
 version: '${version}'
 main: xyz.miyayu.whatname.Whatname
-api-version: 1.18
+api-version: 1.8.8
 prefix: WName
 authors: [ Miyayu ]
 description: WhatIsMyName?
 website: https://twitter.com/yuu1111main
+commands:
+  whatname:
+    description: Check the names of all users.
+    permission: whatname.admin
+permissions:
+  whatname.admin:
+    default: op
+  whatname.join:
+    default: true
