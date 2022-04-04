@@ -13,5 +13,3 @@ commands:
 permissions:
   whatname.admin:
     default: op
-  whatname.join:
-    default: true
