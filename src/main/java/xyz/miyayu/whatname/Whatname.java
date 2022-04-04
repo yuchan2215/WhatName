@@ -7,13 +7,13 @@ public final class Whatname extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        //コマンドの追加
         Bukkit.getPluginCommand("whatname").setExecutor(new WhatNameExecutor());
+        //参加時の処理の定義
         Bukkit.getServer().getPluginManager().registerEvents(new JoinEvent(),this);
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
 }

@@ -9,6 +9,7 @@ import org.bukkit.command.CommandSender;
 public class WhatNameExecutor implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        //全ユーザーにメッセージを送信する
         Bukkit.getOnlinePlayers().forEach(SendInfo::sendMessage);
         return true;
     }
